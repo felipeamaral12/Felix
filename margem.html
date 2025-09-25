@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <!--
+        Border = Bordas 
+        Padding = Espaço da borda do Objeto
+    -->
+    <style>
+        .body{
+            background-color: rgb(255, 255, 255);
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+
+            margin-top: 50px;
+            padding-left: 400px;
+            background-color: rgb(255, 255, 255);
+        }
+    
+        .tamanho{
+            width: 180px;
+            height: auto;
+            border-radius: 15px;
+        }
+        
+        .centralizar{
+            text-align: center;
+        }
+        .caixa{
+           font-size: 15px; 
+           font-family: 'Times New Roman', Times, serif;
+           color: rgb(0, 0, 0);
+           font-weight: bold;
+           border-radius: 500px;
+        }
+        .btn1{
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 500px;
+        }
+        .btn1:hover{
+            background-color: aliceblue;
+            color: rgb(138, 130, 250);
+        }
+        .btn2{
+            font-size: 15x;
+            font-weight: bold;
+            border-radius: 500px;
+        }
+        .btn2:hover{
+            background-color: aliceblue;
+            color: rgb(138, 130, 250);
+        }
+        .forms{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(138, 130, 250);
+            border-radius: 20px;
+            
+            margin-left: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 10px;
+            gap: 5px;
+
+        }
+    </style>
+    <div class="container">
+            <img src="img/gatofelix1.png" alt="gato" class="tamanho" class="centralizar">
+
+            <div class="forms">
+                <h1>
+                    Cadastro do clube Félix
+                </h1>
+                
+                <input type="text" id="nome" placeholder="Coloque seu nome" class="caixa">
+                <input type="text" id="mail" placeholder="Seu E-mail" class="caixa">
+                <input type="text" id="fone" placeholder="Telefone" class="caixa">
+
+                <button type="button" id="Cadastrar" class="btn1">Cadastrar</button>
+                <button type="button" id="enviar" class="btn2">Enviar</button>
+
+            </div>
+    </div>
+    
+</body>
+</html>
